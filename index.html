@@ -39,7 +39,7 @@ Receba no seu telemóvel um guia prático com várias dicas para vender a sua ca
 
 <p>Preencha os seus dados e receba o guia em PDF no seu telemóvel.</p>
 
-<form action="guia.pdf">
+<form>
 
 <div class="input-box">
 <i class='bx bxs-user'></i>
@@ -49,16 +49,19 @@ Receba no seu telemóvel um guia prático com várias dicas para vender a sua ca
 <div class="input-box">
 <i class='bx bxs-phone'></i>
 <input 
-type="tel"
+type="tel" 
 placeholder="O seu número de telefone"
 pattern="[0-9]{9}"
 maxlength="9"
-required>
+required
+>
 </div>
 
-<button type="submit"> 
-DESCARREGAR GUIA PRÁTICO EM PDF
+<button type="submit">
+  <a href="guia.pdf" download></a>
+  DESCARREGAR GUIA PRÁTICO EM PDF
 </button>
+</a>
 
 </form>
 
