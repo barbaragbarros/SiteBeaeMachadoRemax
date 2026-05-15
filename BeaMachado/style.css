@@ -1,0 +1,159 @@
+*{ 
+margin:0; /* remove todas as margens padrão de todos os elementos */
+padding:0; /* remove todos os espaçamentos internos padrão */
+box-sizing:border-box; /* faz width e height incluírem padding e border */
+font-family:'Poppins', sans-serif; /* define a fonte padrão do site */
+}
+
+body{
+background:#f2f2f2; /* define a cor de fundo da página */
+color:#333; /* define a cor padrão do texto */
+}
+
+/* topo azul */
+
+.topo{
+background:#0c2d55; /* cor de fundo azul escuro */
+color:white; /* cor do texto dentro do topo */
+text-align:center; /* centraliza os textos */
+padding:60px 20px 120px 20px; /* espaçamento interno: topo, lados, baixo */
+border-bottom-left-radius:90px; /* arredonda a parte inferior esquerda */
+border-bottom-right-radius:90px; /* arredonda a parte inferior direita */
+border-bottom:4px solid #cfa65d; /* linha dourada curva */
+position:relative; /* permite posicionar elementos dentro dele */
+}
+
+.badge{
+display:inline-block; /* faz o elemento se comportar como bloco em linha */
+border:1px solid #c89a4b; /* cria borda dourada ao redor */
+padding:8px 18px; /* espaço interno do badge */
+border-radius:20px; /* deixa o badge arredondado */
+font-size:13px; /* tamanho da fonte */
+margin-bottom:20px; /* espaço abaixo do badge */
+color:#f5c77d; /* cor do texto dourado */
+}
+
+.topo h1{
+font-size:32px; /* tamanho do título principal */
+font-weight:600; /* deixa a fonte semi-negrito */
+line-height:1.3; /* altura das linhas do texto */
+max-width:500px; /* largura máxima do título */
+margin:auto; /* centraliza horizontalmente */
+}
+
+.topo h1 span{
+color:#f5c77d; /* destaca parte do título em dourado */
+}
+
+.topo p{
+margin-top:20px; /* espaço acima do parágrafo */
+font-size:15px; /* tamanho da fonte */
+max-width:420px; /* largura máxima do texto */
+margin-left:auto; /* centraliza horizontalmente */
+margin-right:auto; /* centraliza horizontalmente */
+opacity:0.9; /* deixa o texto levemente transparente */
+}
+
+/* imagem da casa */
+
+.imagem{
+background-image:url("casa.jpg"); /* define a imagem de fundo */
+background-size:cover; /* faz a imagem preencher todo o espaço */
+background-position:center; /* centraliza a imagem */
+height:340px; /* altura da seção da imagem */
+margin-top:-80px; /* puxa a imagem para cima (sobrepondo o topo) */
+}
+
+/* área do formulário */
+
+.form-area{
+padding:20px; /* espaço interno da área */
+display:flex; /* ativa o layout flexbox */
+flex-direction:column; /* organiza os elementos em coluna */
+align-items:center; /* centraliza horizontalmente */
+}
+
+.card{
+background:white; /* fundo branco do formulário */
+width:100%; /* ocupa toda a largura possível */
+max-width:420px; /* largura máxima do card */
+padding:30px 25px; /* espaçamento interno */
+border-radius:20px; /* cantos arredondados */
+box-shadow:0 10px 30px rgba(0,0,0,0.15); /* sombra ao redor */
+margin-top:-100px; /* faz o card subir sobre a imagem */
+text-align:center; /* centraliza o texto */
+}
+
+.card h2{
+font-size:24px; /* tamanho do título do formulário */
+margin-bottom:10px; /* espaço abaixo do título */
+}
+
+.card h2 span{
+color:#c89a4b; /* destaque dourado no título */
+}
+
+.card p{
+font-size:14px; /* tamanho do texto */
+margin-bottom:20px; /* espaço abaixo do texto */
+color:#666; /* cor cinza do texto */
+}
+
+form{
+display:flex; /* ativa flexbox */
+flex-direction:column; /* organiza os inputs em coluna */
+gap:15px; /* espaço entre os inputs */
+}
+
+input{
+padding:14px; /* espaço interno do campo */
+border-radius:10px; /* cantos arredondados */
+border:1px solid #ddd; /* borda cinza clara */
+font-size:14px; /* tamanho da fonte */
+}
+
+button{
+background:#c89a4b; /* cor dourada do botão */
+border:none; /* remove borda padrão */
+color:white; /* cor do texto do botão */
+padding:15px; /* espaço interno do botão */
+border-radius:10px; /* cantos arredondados */
+font-weight:600; /* texto semi-negrito */
+cursor:pointer; /* muda o cursor para mãozinha */
+}
+
+button:hover{
+background:#b58533; /* muda a cor do botão quando passa o mouse */
+}
+
+/* texto segurança */
+
+.seguro{
+margin-top:20px; /* espaço acima do texto */
+font-size:13px; /* tamanho da fonte */
+color:#777; /* cor cinza */
+text-align:center; /* centraliza o texto */
+max-width:300px; /* largura máxima do texto */
+}
+
+.input-box{
+position:relative;
+width:100%;
+}
+
+.input-box input{
+width:100%;
+padding:14px 14px 14px 45px; /* espaço para o ícone */
+border-radius:10px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+.input-box i{
+position:absolute;
+left:15px;
+top:50%;
+transform:translateY(-50%);
+font-size:18px;
+color:#777;
+}
