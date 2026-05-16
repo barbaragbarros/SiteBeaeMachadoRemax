@@ -39,17 +39,22 @@ Receba no seu telemóvel um guia prático com várias dicas para vender a sua ca
 
 <p>Preencha os seus dados e receba o guia em PDF no seu telemóvel.</p>
 
-<form action="GuiaPrático.pdf">
+<form id="formulario">
 
 <div class="input-box">
 <i class='bx bxs-user'></i>
-<input type="text" placeholder="O seu nome" required>
+<input 
+type="text" 
+name="nome"
+placeholder="O seu nome" 
+required>
 </div>
 
 <div class="input-box">
 <i class='bx bxs-phone'></i>
 <input 
 type="tel"
+name="telefone"
 placeholder="O seu número de telefone"
 pattern="[0-9]{9}"
 maxlength="9"
@@ -70,6 +75,31 @@ Não partilhamos as suas informações.
 </div>
 
 </section>
+
+<script>
+const form = document.getElementById("formulario");
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+fetch("https://script.google.com/macros/s/AKfycbxWjRt7MMIQvGqu2JVrHAuawf5U_SSah7NFbpWQ_lDWC2gy7iV81omkrR6i8UFcLHHrmA/exec", {
+method: "POST",
+body: new FormData(form)
+})
+.then(() => {
+
+window.location.href = "GuiaPrático.pdf";
+
+})
+.catch(() => {
+
+alert("Erro ao enviar formulário");
+
+});
+
+});
+</script>
 
 </body>
 </html>
