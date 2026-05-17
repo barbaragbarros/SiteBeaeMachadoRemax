@@ -16,7 +16,7 @@ color:#333; /* define a cor padrão do texto */
 background:#0c2d55; /* cor de fundo azul escuro */
 color:white; /* cor do texto dentro do topo */
 text-align:center; /* centraliza os textos */
-padding:60px 20px 120px 20px; /* espaçamento interno: topo, lados, baixo */
+padding:60px 20px 50px 20px; /* espaçamento interno: topo, lados, baixo */
 border-bottom-left-radius:90px; /* arredonda a parte inferior esquerda */
 border-bottom-right-radius:90px; /* arredonda a parte inferior direita */
 border-bottom:4px solid #cfa65d; /* linha dourada curva */
