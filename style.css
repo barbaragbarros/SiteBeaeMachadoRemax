@@ -157,3 +157,36 @@ transform:translateY(-50%);
 font-size:18px;
 color:#777;
 }
+
+/* incone de portugal ao lado do telefone */
+.telefone{
+display:flex;
+align-items:center;
+border:1px solid #ddd;
+border-radius:10px;
+overflow:hidden;
+background:white;
+}
+
+.prefixo{
+display:flex;
+align-items:center;
+gap:6px;
+padding:0 12px;
+background:#f7f7f7;
+border-right:1px solid #ddd;
+font-size:14px;
+}
+
+.prefixo img{
+width:18px;
+height:12px;
+}
+
+.telefone input{
+border:none;
+flex:1;
+padding:14px;
+font-size:14px;
+outline:none;
+}
