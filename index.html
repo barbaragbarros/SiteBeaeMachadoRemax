@@ -2,11 +2,67 @@
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Guia para vender a sua casa</title>
-<link rel="stylesheet" href="style.css">
+
+<meta name="description" content="Receba no seu telemóvel um guia prático com várias dicas para vender a sua casa de forma mais rápida e pelo melhor valor.">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="vender casa, guia prático, dicas venda imobiliária, vender imóvel, acelerar venda" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Guia para vender a sua casa">
+<meta property="og:description" content="Receba no seu telemóvel um guia prático com várias dicas para vender a sua casa de forma mais rápida e pelo melhor valor.">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:url" content="https://www.beatrizemachado.com/">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Guia para vender a sua casa">
+<meta name="twitter:description" content="Receba no seu telemóvel um guia prático com várias dicas para vender a sua casa de forma mais rápida e pelo melhor valor.">
+
+<link rel="canonical" href="https://www.beatrizemachado.com/">
+
+<meta name="theme-color" content="#ffffff">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="preconnect" href="https://flagcdn.com">
+
+<link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="style.css"></noscript>
+
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="alternate" hreflang="pt-PT" href="https://www.beatrizemachado.com/">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.beatrizemachado.com/sitemap.xml">
+
+<meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+
+<meta property="og:site_name" content="Beatriz Machado">
+<meta property="og:image" content="https://www.beatrizemachado.com/og-image.jpg">
+<meta property="og:image:alt" content="Guia prático para vender a sua casa">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:image" content="https://www.beatrizemachado.com/og-image.jpg">
+<meta name="twitter:site" content="@yourhandle">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Guia para vender a sua casa","url":"https://www.beatrizemachado.com/","description":"Receba no seu telemóvel um guia prático com várias dicas para vender a sua casa de forma mais rápida e pelo melhor valor."}
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.beatrizemachado.com/#website","url":"https://www.beatrizemachado.com/","name":"Guia para vender a sua casa"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.beatrizemachado.com/"},{"@type":"ListItem","position":2,"name":"Guia prático","item":"https://www.beatrizemachado.com/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O guia é realmente gratuito?","acceptedAnswer":{"@type":"Answer","text":"Sim. O guia prático é gratuito e será enviado para o seu telemóvel após o preenchimento do formulário."}},{"@type":"Question","name":"Quanto tempo demora a vender uma casa?","acceptedAnswer":{"@type":"Answer","text":"O tempo de venda depende da localização, preço e preparação do imóvel; muitas propriedades vendem em semanas, outras em meses."}},{"@type":"Question","name":"Como recebo o guia?","acceptedAnswer":{"@type":"Answer","text":"Após enviar o formulário será encaminhado para o PDF do guia que pode descarregar no seu telemóvel."}},{"@type":"Question","name":"O que incluiu o guia?","acceptedAnswer":{"@type":"Answer","text":"Dicas para preparar a casa, melhorar a apresentação, definir preço e atrair compradores rapidamente."}}]}]
+</script>
+
 </head>
 
 <body>
@@ -27,9 +83,12 @@ Receba no seu telemóvel um guia prático com várias dicas para vender a sua ca
 
 </header>
 
-<section class="imagem"></section>
 
-<div class="linha-dourada"></div>
+<section class="imagem" aria-hidden="true"></section>
+
+<div class="linha-dourada" aria-hidden="true"></div>
+
+<main id="main-content">
 
 <section class="form-area">
 
@@ -39,22 +98,25 @@ Receba no seu telemóvel um guia prático com várias dicas para vender a sua ca
 
 <p>Preencha os seus dados e receba o guia em PDF no seu telemóvel.</p>
 
-<form id="formulario">
+<form id="formulario" aria-label="Formulário para receber guia prático" aria-describedby="seguro-text">
 
 <div class="input-box">
-<i class='bx bxs-user'></i>
+<i class='bx bxs-user' aria-hidden="true"></i>
 <input 
 type="text" 
 name="nome"
+id="nome"
 placeholder="O seu nome" 
-required>
+required
+aria-label="O seu nome">
 </div>
 
 <div class="input-box telefone">
 
+
 <div class="prefixo">
-<img src="https://flagcdn.com/w20/pt.png">
-<span>+351</span>
+<img src="https://flagcdn.com/w20/pt.png" alt="Bandeira de Portugal" aria-hidden="true">
+<span aria-hidden="true">+351</span>
 </div>
 
 <input 
@@ -63,24 +125,31 @@ id="telefone"
 placeholder="000 000 000"
 pattern="[0-9]{9}"
 maxlength="11"
-required>
+required
+inputmode="tel"
+aria-label="Número de telefone"
+aria-required="true">
+
 
 </div>
 
-<button type="submit">
+<button type="submit" aria-label="Descarregar guia prático em PDF">
 DESCARREGAR GUIA PRÁTICO EM PDF
 </button>
 
 </form>
 
+
 </div>
 
-<div class="seguro">
+<div id="seguro-text" class="seguro" aria-live="polite">
 Os seus dados estão seguros.  
 Não partilhamos as suas informações.
 </div>
 
 </section>
+
+</main>
 
 <script>
 const form = document.getElementById("formulario");
@@ -106,9 +175,6 @@ alert("Erro ao enviar formulário");
 
 });
 </script>
-
-</section>
-
 <script>
 
 const telefone = document.getElementById("telefone");
