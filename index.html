@@ -100,7 +100,16 @@ body: new FormData(form)
 })
 .then(() => {
 
-window.location.href = "GuiaPratico.pdf";
+const link = document.createElement("a");
+
+link.href = "GuiaPratico.pdf";
+link.download = "GuiaPratico.pdf";
+
+document.body.appendChild(link);
+
+link.click();
+
+document.body.removeChild(link);
 
 button.innerText = "DESCARREGADO";
 
