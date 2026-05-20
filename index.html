@@ -85,10 +85,14 @@ Não partilhamos as suas informações.
 
 <script>
 const form = document.getElementById("formulario");
+const button = document.querySelector("button");
 
 form.addEventListener("submit", function(e){
 
 e.preventDefault();
+
+button.disabled = true;
+button.innerText = "A DESCARREGAR...";
 
 fetch("https://script.google.com/macros/s/AKfycbwbGjFdoiQdWpktrKlg3CAKvh9px_nNId7pUzGwuhGe195a1H5DUukJl239g28o8FvILw/exec", {
 method: "POST",
@@ -96,12 +100,17 @@ body: new FormData(form)
 })
 .then(() => {
 
-window.location.href = "GuiaPratico.pdf";
+window.location.href = "guia-pratico.pdf";
+
+button.innerText = "DESCARREGADO";
 
 })
 .catch(() => {
 
 alert("Erro ao enviar formulário");
+
+button.disabled = false;
+button.innerText = "DESCARREGAR GUIA PRÁTICO EM PDF";
 
 });
 
