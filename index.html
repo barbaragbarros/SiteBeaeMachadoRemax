@@ -105,6 +105,9 @@ const link = document.createElement("a");
 link.href = "GuiaPratico.pdf";
 link.download = "GuiaPratico.pdf";
 
+// 👇 abre numa nova aba também
+link.target = "_blank";
+
 document.body.appendChild(link);
 
 link.click();
@@ -113,19 +116,10 @@ document.body.removeChild(link);
 
 button.innerText = "DESCARREGADO";
 
-})
-.catch(() => {
-
-alert("Erro ao enviar formulário");
-
-button.disabled = false;
-button.innerText = "DESCARREGAR GUIA PRÁTICO EM PDF";
-
 });
 
 });
 </script>
-
 </section>
 
 </body>
