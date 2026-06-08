@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendas — Imóveis</title>
+  <link rel="stylesheet" href="vendas.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════
+       SECÇÃO 1 — Hero com overlay âmbar
+       ════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+
+      <!-- Títulos principais -->
+      <div class="hero__headline">
+        <p class="line1">Filtramos<br>curiosos.</p>
+        <p class="line2">Atraímos<br>compradores.</p>
+      </div>
+
+      <!-- Corpo de texto -->
+      <div class="hero__body">
+        <p>Ajudamos o seu imóvel<br>
+           a chegar aos <strong>compradores certos</strong>,</p>
+        <p>sem <strong>chamadas inúteis</strong><br>
+           nem <strong>visitas sem intenção real.</strong></p>
+      </div>
+
+      <!-- CTA -->
+      <div class="hero__cta">
+        <div class="divider-line">
+          <a href="#pain-section" class="btn-cta">Descubra como.</a>
+        </div>
+        <a href="#pain-section" class="btn-primary">Descubra como →</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       SECÇÃO 2 — Problema / Pain points
+       ════════════════════════════════════ -->
+  <section class="pain" id="pain-section">
+
+    <!-- Faixa de foto -->
+    <div class="pain__photo">
+      <img src="sala.jpg" alt="Sala de estar moderna e luminosa" />
+    </div>
+
+    <!-- Texto introdutório -->
+    <div class="pain__text">
+      <h2 class="pain__title">
+        A maioria dos imóveis<br>
+        <span class="highlight">perde valor</span><br>
+        antes mesmo<br>
+        da primeira visita.
+      </h2>
+      <div class="pain__separator"></div>
+      <div class="pain__copy">
+        <p>Muitos proprietários acreditam que basta publicar um anúncio para vender bem.</p>
+        <p>Mas a verdade é que um imóvel mal posicionado perde força rapidamente no mercado.</p>
+      </div>
+    </div>
+
+    <!-- Cards de problemas -->
+    <div class="pain__cards">
+
+      <!-- Preço errado -->
+      <div class="pain-card">
+        <div class="pain-card__icon">
+          <!-- Ícone: etiqueta de preço -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.59 13.41L13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+            <line x1="7" y1="7" x2="7.01" y2="7"/>
+          </svg>
+        </div>
+        <div class="pain-card__body">
+          <p class="pain-card__title">
+            <span class="x-mark">✕</span> Preço errado
+          </p>
+          <p class="pain-card__desc">
+            Um imóvel mal avaliado afasta compradores<br>
+            e reduz o interesse logo nas primeiras semanas.
+          </p>
+        </div>
+      </div>
+
+      <!-- Divulgação fraca -->
+      <div class="pain-card">
+        <div class="pain-card__icon">
+          <!-- Ícone: câmara fotográfica -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+            <circle cx="12" cy="13" r="4"/>
+          </svg>
+        </div>
+        <div class="pain-card__body">
+          <p class="pain-card__title">
+            <span class="x-mark">✕</span> Divulgação fraca
+          </p>
+          <p class="pain-card__desc">
+            Fotos amadoras e anúncios genéricos<br>
+            não transmitem o verdadeiro valor do imóvel.
+          </p>
+        </div>
+      </div>
+
+      <!-- Visitas sem intenção real -->
+      <div class="pain-card">
+        <div class="pain-card__icon">
+          <!-- Ícone: grupo de pessoas -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div class="pain-card__body">
+          <p class="pain-card__title">
+            <span class="x-mark">✕</span> Visitas sem intenção real
+          </p>
+          <p class="pain-card__desc">
+            Muitas chamadas. Poucos compradores<br>
+            realmente preparados para avançar.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       SECÇÃO 3 — O Meu Método (carrossel)
+       ════════════════════════════════════ -->
+  <section class="metodo" id="metodo-section">
+
+    <!-- Cabeçalho -->
+    <div class="metodo__header">
+      <div class="metodo__label">
+        <span class="metodo__line"></span>
+        O MEU MÉTODO
+        <span class="metodo__line"></span>
+      </div>
+      <h2 class="metodo__title">
+        Um processo estratégico <span class="highlight">pensado para vender melhor.</span>
+      </h2>
+      <p class="metodo__subtitle">
+        Cada etapa foi criada para posicionar o seu imóvel da melhor forma e atrair compradores realmente preparados.
+      </p>
+    </div>
+
+    <!-- Carrossel -->
+    <div class="metodo__carousel-wrap">
+      <div class="metodo__carousel" id="metodoCar">
+
+        <!-- 01 -->
+        <div class="metodo-card">
+          <div class="metodo-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/>
+              <line x1="6" y1="20" x2="6" y2="14"/>
+              <polyline points="22 10 18 6 14 10"/>
+            </svg>
+          </div>
+          <div class="metodo-card__num">01 —</div>
+          <h3 class="metodo-card__title">Avaliação do imóvel com estudo de mercado</h3>
+          <div class="metodo-card__sep"></div>
+          <p class="metodo-card__desc">Analisamos o mercado, os imóveis concorrentes e o posicionamento ideal para definir uma estratégia de entrada forte e competitiva.</p>
+          <p class="metodo-card__inclui">Inclui:</p>
+          <ul class="metodo-card__list">
+            <li>Estudo comparativo de mercado</li>
+            <li>Posicionamento estratégico</li>
+            <li>Definição do preço ideal</li>
+            <li>Análise da concorrência</li>
+            <li>Estratégia de valorização</li>
+          </ul>
+        </div>
+
+        <!-- 02 -->
+        <div class="metodo-card">
+          <div class="metodo-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <div class="metodo-card__num">02 —</div>
+          <h3 class="metodo-card__title">Preparação e valorização do imóvel</h3>
+          <div class="metodo-card__sep"></div>
+          <p class="metodo-card__desc">Antes da divulgação, ajudamos a preparar o imóvel para causar uma melhor primeira impressão e aumentar a perceção de valor.</p>
+          <p class="metodo-card__inclui">Inclui:</p>
+          <ul class="metodo-card__list">
+            <li>Consultoria de apresentação</li>
+            <li>Organização visual dos espaços</li>
+            <li>Sugestões de valorização</li>
+            <li>Pequenos ajustes estratégicos</li>
+            <li>Orientação para destaque visual</li>
+          </ul>
+        </div>
+
+        <!-- 03 -->
+        <div class="metodo-card">
+          <div class="metodo-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+              <circle cx="12" cy="13" r="4"/>
+            </svg>
+          </div>
+          <div class="metodo-card__num">03 —</div>
+          <h3 class="metodo-card__title">Foto-reportagem profissional</h3>
+          <div class="metodo-card__sep"></div>
+          <p class="metodo-card__desc">A apresentação visual influencia diretamente o interesse dos compradores. Criamos conteúdo profissional pensado para destacar o imóvel e aumentar o impacto do anúncio.</p>
+          <p class="metodo-card__inclui">Inclui:</p>
+          <ul class="metodo-card__list">
+            <li>Fotografia profissional</li>
+            <li>Vídeo do imóvel</li>
+            <li>Conteúdo para redes sociais</li>
+            <li>Imagens otimizadas para anúncios</li>
+            <li>Comunicação visual premium</li>
+          </ul>
+        </div>
+
+        <!-- 04 -->
+        <div class="metodo-card">
+          <div class="metodo-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+            </svg>
+          </div>
+          <div class="metodo-card__num">04 —</div>
+          <h3 class="metodo-card__title">Plano de divulgação estratégica</h3>
+          <div class="metodo-card__sep"></div>
+          <p class="metodo-card__desc">Não basta anunciar. É preciso posicionar o imóvel nos canais certos, para as pessoas certas.</p>
+          <p class="metodo-card__inclui">Inclui:</p>
+          <ul class="metodo-card__list">
+            <li>Divulgação nos principais portais</li>
+            <li>Estratégia para redes sociais</li>
+            <li>Campanhas segmentadas</li>
+            <li>Base de compradores qualificados</li>
+            <li>Promoção direcionada</li>
+          </ul>
+        </div>
+
+        <!-- 05 -->
+        <div class="metodo-card">
+          <div class="metodo-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="metodo-card__num">05 —</div>
+          <h3 class="metodo-card__title">Gestão de compradores e negociação</h3>
+          <div class="metodo-card__sep"></div>
+          <p class="metodo-card__desc">Filtramos contactos, qualificamos compradores e acompanhamos todas as visitas para evitar desgaste desnecessário.</p>
+          <p class="metodo-card__inclui">Inclui:</p>
+          <ul class="metodo-card__list">
+            <li>Qualificação de leads</li>
+            <li>Gestão de visitas</li>
+            <li>Acompanhamento comercial</li>
+            <li>Negociação estratégica</li>
+            <li>Redução de visitas improdutivas</li>
+          </ul>
+        </div>
+
+        <!-- 06 -->
+        <div class="metodo-card">
+          <div class="metodo-card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <polyline points="9 15 11 17 15 13"/>
+            </svg>
+          </div>
+          <div class="metodo-card__num">06 —</div>
+          <h3 class="metodo-card__title">Acompanhamento até à escritura</h3>
+          <div class="metodo-card__sep"></div>
+          <p class="metodo-card__desc">Tratamos de todo o processo até à conclusão do negócio, garantindo segurança e acompanhamento em cada etapa.</p>
+          <p class="metodo-card__inclui">Inclui:</p>
+          <ul class="metodo-card__list">
+            <li>Apoio burocrático</li>
+            <li>Organização documental</li>
+            <li>Acompanhamento processual</li>
+            <li>Suporte contínuo</li>
+            <li>Apoio até à escritura</li>
+          </ul>
+        </div>
+
+      </div><!-- /.metodo__carousel -->
+
+      <!-- Dots de navegação -->
+      <div class="metodo__dots" id="metodoDots">
+        <button class="dot active" data-index="0" aria-label="Passo 1"></button>
+        <button class="dot" data-index="1" aria-label="Passo 2"></button>
+        <button class="dot" data-index="2" aria-label="Passo 3"></button>
+        <button class="dot" data-index="3" aria-label="Passo 4"></button>
+        <button class="dot" data-index="4" aria-label="Passo 5"></button>
+        <button class="dot" data-index="5" aria-label="Passo 6"></button>
+      </div>
+    </div><!-- /.metodo__carousel-wrap -->
+
+    <!-- Rodapé da secção -->
+    <div class="metodo__footer">
+      <div class="metodo__footer-inner">
+        <svg class="metodo__footer-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <p>
+          Mais do que anunciar, criamos <span class="highlight">estratégia</span>, geramos perceção de valor e atraímos compradores realmente preparados para avançar.
+        </p>
+        <span class="metodo__footer-cta">O seu imóvel merece mais.</span>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    (function () {
+      const car = document.getElementById('metodoCar');
+      const dots = document.querySelectorAll('#metodoDots .dot');
+
+      // Update active dot based on scroll position
+      car.addEventListener('scroll', () => {
+        const cardW = car.querySelector('.metodo-card').offsetWidth + 16; // gap
+        const idx = Math.round(car.scrollLeft / cardW);
+        dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+      }, { passive: true });
+
+      // Click dot → scroll to card
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          const cardW = car.querySelector('.metodo-card').offsetWidth + 16;
+          car.scrollTo({ left: parseInt(dot.dataset.index) * cardW, behavior: 'smooth' });
+        });
+      });
+    })();
+  </script>
+
+
+  <!-- ════════════════════════════════════
+       SECÇÃO 4 — Diferenciação (tabela)
+       ════════════════════════════════════ -->
+  <section class="dif" id="dif-section">
+    <div class="dif__header">
+      <p class="section-label"><span class="label-line"></span> SECÇÃO DIFERENCIAÇÃO <span class="label-line"></span></p>
+      <h2 class="dif__title">O meu método <span class="vs">vs.</span> o serviço tradicional</h2>
+      <div class="dif__sep"></div>
+    </div>
+
+    <!-- Cabeçalhos da tabela -->
+    <div class="dif__table">
+      <div class="dif__col-heads">
+        <div class="dif__col-head dif__col-head--mine">O meu método</div>
+        <div class="dif__col-head dif__col-head--trad">Serviço tradicional</div>
+      </div>
+
+      <!-- Linhas -->
+      <div class="dif__row">
+        <div class="dif__cell dif__cell--mine">
+          <svg class="check-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+          Estudo estratégico de mercado
+        </div>
+        <div class="dif__icon-wrap">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><polyline points="22 10 18 6 14 10"/></svg>
+        </div>
+        <div class="dif__cell dif__cell--trad">
+          Avaliação genérica
+          <svg class="x-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        </div>
+      </div>
+
+      <div class="dif__row">
+        <div class="dif__cell dif__cell--mine">
+          <svg class="check-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+          Marketing profissional
+        </div>
+        <div class="dif__icon-wrap">
+          <svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+        </div>
+        <div class="dif__cell dif__cell--trad">
+          Anúncio básico
+          <svg class="x-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        </div>
+      </div>
+
+      <div class="dif__row">
+        <div class="dif__cell dif__cell--mine">
+          <svg class="check-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+          Foto-reportagem premium
+        </div>
+        <div class="dif__icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        </div>
+        <div class="dif__cell dif__cell--trad">
+          Fotos amadoras
+          <svg class="x-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        </div>
+      </div>
+
+      <div class="dif__row">
+        <div class="dif__cell dif__cell--mine">
+          <svg class="check-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+          Divulgação segmentada
+        </div>
+        <div class="dif__icon-wrap">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+        </div>
+        <div class="dif__cell dif__cell--trad">
+          Divulgação limitada
+          <svg class="x-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        </div>
+      </div>
+
+      <div class="dif__row">
+        <div class="dif__cell dif__cell--mine">
+          <svg class="check-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+          Compradores qualificados
+        </div>
+        <div class="dif__icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="dif__cell dif__cell--trad">
+          Visitas aleatórias
+          <svg class="x-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        </div>
+      </div>
+
+      <div class="dif__row">
+        <div class="dif__cell dif__cell--mine">
+          <svg class="check-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+          Estratégia de negociação
+        </div>
+        <div class="dif__icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="dif__cell dif__cell--trad">
+          Processo sem direção
+          <svg class="x-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        </div>
+      </div>
+
+      <div class="dif__row">
+        <div class="dif__cell dif__cell--mine">
+          <svg class="check-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+          Acompanhamento completo
+        </div>
+        <div class="dif__icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg>
+        </div>
+        <div class="dif__cell dif__cell--trad">
+          Comunicação limitada
+          <svg class="x-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="dif__footer">
+      <div class="dif__footer-left">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <p>Mais estratégia. Mais interesse. <span class="highlight">Mais valor.</span></p>
+      </div>
+      <div class="dif__footer-right">
+        <p>Não é apenas vender.<br>É fazer o seu imóvel <span class="highlight">destacar-se.</span></p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       SECÇÃO 5 — Posicionamento
+       ════════════════════════════════════ -->
+  <section class="pos" id="pos-section">
+
+    <!-- Hero foto + título -->
+    <div class="pos__hero">
+      <div class="pos__hero-text">
+        <p class="section-label"><span class="label-line"></span> POSICIONAMENTO <span class="label-line"></span></p>
+        <h2 class="pos__title">O seu imóvel merece mais do que um <span class="highlight">simples anúncio.</span></h2>
+        <div class="pos__sep"></div>
+      </div>
+    </div>
+
+    <!-- Itens -->
+    <div class="pos__items">
+
+      <div class="pos__item">
+        <div class="pos__item-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div class="pos__item-divider"></div>
+        <p class="pos__item-text">Cada imóvel tem características únicas, um público específico e uma <span class="highlight">estratégia própria.</span></p>
+      </div>
+
+      <div class="pos__item">
+        <div class="pos__item-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+        </div>
+        <div class="pos__item-divider"></div>
+        <p class="pos__item-text">O nosso trabalho é criar posicionamento, gerar perceção de valor e <span class="highlight">atrair compradores</span> realmente <span class="highlight">preparados</span> para avançar.</p>
+      </div>
+
+      <div class="pos__item">
+        <div class="pos__item-icon">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><polyline points="22 10 18 6 14 10"/></svg>
+        </div>
+        <div class="pos__item-divider"></div>
+        <p class="pos__item-text">Analisamos o mercado, destacamos o que torna o seu imóvel único e comunicamos o seu <span class="highlight">verdadeiro valor.</span></p>
+      </div>
+
+      <div class="pos__item">
+        <div class="pos__item-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="pos__item-divider"></div>
+        <p class="pos__item-text">Atraímos compradores qualificados, reduzimos visitas improdutivas e aumentamos as hipóteses de um <span class="highlight">negócio bem-sucedido.</span></p>
+      </div>
+
+    </div>
+
+    <!-- Banner final -->
+    <div class="pos__banner">
+      <div class="pos__banner-top">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <p>Porque vender bem <span class="highlight">não acontece por acaso.</span></p>
+      </div>
+      <div class="pos__banner-sep"></div>
+      <p class="pos__banner-sub">Estratégia, apresentação e posicionamento.<br><strong>É assim que geramos os melhores resultados.</strong></p>
+    </div>
+
+  </section>
+
+
+  <!-- ════════════════════════════════════
+       SECÇÃO 6 — CTA / Formulário
+       ════════════════════════════════════ -->
+  <section class="cta-form" id="cta-section">
+
+    <div class="cta-form__text">
+      <p class="cta-form__label">PRONTO PARA O PRÓXIMO PASSO?</p>
+      <div class="cta-form__label-line"></div>
+      <h2 class="cta-form__title">Quer perceber qual a melhor estratégia para <span class="highlight">vender o seu imóvel?</span></h2>
+      <div class="cta-form__title-line"></div>
+      <p class="cta-form__sub">Preencha os seus dados e receba uma <span class="highlight">análise gratuita</span>, sem compromisso.</p>
+
+      <div class="cta-form__badges">
+        <div class="badge">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><polyline points="22 10 18 6 14 10"/></svg>
+          <span>Análise estratégica do seu imóvel</span>
+        </div>
+        <div class="badge">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+          <span>Estratégia personalizada para o seu objetivo</span>
+        </div>
+        <div class="badge">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          <span>Sem compromisso. Totalmente confidencial.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulário -->
+    <div class="cta-form__form">
+      <div class="form-field">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="O seu nome" autocomplete="name" />
+      </div>
+      <div class="form-field">
+        <label for="tel">Número de telefone</label>
+        <input type="tel" id="tel" placeholder="Ex.: 912 345 678" autocomplete="tel" />
+      </div>
+      <div class="form-field">
+        <label for="email">Email <span class="optional">(opcional)</span></label>
+        <input type="email" id="email" placeholder="O seu email" autocomplete="email" />
+      </div>
+      <button class="btn-submit" type="button">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        RECEBER AVALIAÇÃO GRATUITA
+      </button>
+      <p class="form-privacy">
+        <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Os seus dados estão seguros e não serão partilhados.
+      </p>
+    </div>
+
+  </section>
+
+</body>
+</html>
