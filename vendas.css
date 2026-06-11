@@ -39,7 +39,7 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 100svh;
+  min-height: 85svh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
