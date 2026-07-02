@@ -319,24 +319,24 @@
 
   <script>
     (function () {
-      const car = document.getElementById('metodoCar');
-      const dots = document.querySelectorAll('#metodoDots .dot');
+  const car = document.getElementById('metodoCar');
+  const dots = document.querySelectorAll('#metodoDots .dot');
 
-      // Update active dot based on scroll position
-      car.addEventListener('scroll', () => {
-        const cardW = car.querySelector('.metodo-card').offsetWidth + 16; // gap
-        const idx = Math.round(car.scrollLeft / cardW);
-        dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-      }, { passive: true });
+  // Update active dot based on scroll position
+  car.addEventListener('scroll', () => {
+    const slideW = car.clientWidth;
+    const idx = Math.round(car.scrollLeft / slideW);
+    dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+  }, { passive: true });
 
-      // Click dot → scroll to card
-      dots.forEach(dot => {
-        dot.addEventListener('click', () => {
-          const cardW = car.querySelector('.metodo-card').offsetWidth + 16;
-          car.scrollTo({ left: parseInt(dot.dataset.index) * cardW, behavior: 'smooth' });
-        });
-      });
-    })();
+  // Click dot → scroll to card
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const slideW = car.clientWidth;
+      car.scrollTo({ left: parseInt(dot.dataset.index) * slideW, behavior: 'smooth' });
+    });
+  });
+})();
   </script>
 
 
@@ -345,7 +345,6 @@
        ════════════════════════════════════ -->
   <section class="dif" id="dif-section">
     <div class="dif__header">
-      <p class="section-label"><span class="label-line"></span> SECÇÃO DIFERENCIAÇÃO <span class="label-line"></span></p>
       <h2 class="dif__title">O meu método <span class="vs">vs.</span> o serviço tradicional</h2>
       <div class="dif__sep"></div>
     </div>
@@ -478,7 +477,6 @@
     <!-- Hero foto + título -->
     <div class="pos__hero">
       <div class="pos__hero-text">
-        <p class="section-label"><span class="label-line"></span> POSICIONAMENTO <span class="label-line"></span></p>
         <h2 class="pos__title">O seu imóvel merece mais do que um <span class="highlight">simples anúncio.</span></h2>
         <div class="pos__sep"></div>
       </div>

@@ -39,7 +39,7 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 80svh;
+  min-height: 92svh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -384,27 +384,37 @@ body {
 
 .metodo__carousel {
   display: flex;
-  gap: 16px;
+  gap: 0;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding: 8px 28px 20px;
+  padding: 8px 0 20px;
   scrollbar-width: none;
 }
 
 .metodo__carousel::-webkit-scrollbar { display: none; }
 
 .metodo-card {
-  flex: 0 0 82vw;
-  max-width: 300px;
-  scroll-snap-align: start;
+  box-sizing: border-box;
+  flex: 0 0 100%;
+  width: 80%;        /* era 88% — reduzindo um pouco sobra mais espaço de cada lado */
+  margin: 0 auto;
+  scroll-snap-align: center;
   background: var(--white);
   border-radius: var(--border-radius);
-  padding: 28px 22px;
+  padding: 32px 24px;
   box-shadow: var(--shadow);
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: 768px) {
+  .metodo-card {
+    max-width: 420px;
+    padding: 36px 30px;
+  }
+}9
+
 
 .metodo-card__icon {
   width: 60px;
@@ -569,13 +579,11 @@ body {
 }
 
 @media (min-width: 480px) {
-  .metodo-card { flex: 0 0 72vw; }
   .metodo__carousel { padding: 8px 44px 20px; }
   .metodo__footer { margin: 8px 40px 0; }
 }
 
 @media (min-width: 768px) {
-  .metodo-card { flex: 0 0 320px; }
   .metodo__carousel { padding: 8px 60px 20px; }
   .metodo__footer { margin: 8px 56px 0; }
   .metodo__header { padding: 64px 60px 32px; }
