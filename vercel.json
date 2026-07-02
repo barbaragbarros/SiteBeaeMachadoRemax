@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/vendas", "destination": "/vendas.html" },
+    { "source": "/politica", "destination": "/politica.html" },
     { "source": "/(.*)", "destination": "/" }
   ]
 }
